@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-staff_router =APIRouter(PREFIX="/Staff")
+staff_router =APIRouter(prefix="/Staff",tags=["staff"])
 
 @staff_router.post("/addstaff")
 def addstaff():
