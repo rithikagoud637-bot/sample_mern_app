@@ -43,7 +43,7 @@ function Contact_page() {
                 />
                 <br /><br />
 
-                <button type="submit">Submit</button>
+                <button type="submit">Submit the data </button>
             </form>
 
             <h3>Entered Details</h3>
