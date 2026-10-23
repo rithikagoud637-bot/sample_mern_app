@@ -6,4 +6,4 @@ function About_page(){
     )
 }
 
-export default About_page
+export default About_page;
