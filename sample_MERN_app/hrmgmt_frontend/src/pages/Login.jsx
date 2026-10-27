@@ -9,9 +9,16 @@ function Login() {
     let handleLogin=(event)=>{
         event.preventDefault()
         if(emailid=="admin@gmail.com" && password=="admin"){
-            navigate("/userhome")
+            navigate("/adminHome")
         }else{
-            setError("invalid credentials")
+            let req= await fetch("http://localhost:3000/api/emp/login" ,{
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify({emailid,password})}
+
+            );
+            let data=req.JSON()
+            console.log(data);
         }
     
 

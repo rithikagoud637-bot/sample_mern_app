@@ -2,9 +2,13 @@
 import Header_components from './components/Header_components';
 import Fotter_components from './components/Fotter_components';
 import Home from './pages/home';
-import Login from './login';
+import Login from './pages/Login';
 import Userhome from './userhome';
-import register from './register';
+import adminHome from './pages/adminhome';
+import HrHome from './pages/HrHome';
+import empHome from './pages/empHome';
+import register from './pages/register';
+
 import About_page from './pages/About_page';
 import Contact_page from './pages/Contact_page';
 
@@ -21,6 +25,9 @@ function App() {
                 <Route path="/about" element={<About_page></About_page>}></Route>
                 <Route path="/register" element={<register></register>}></Route>
                 <Route path="/contact" element={<Contact_page></Contact_page>}></Route>
+                <Route path="/empHome"element={<empHome></empHome>}></Route>
+                <Route path="/HrHome" element={<HrHome></HrHome>}></Route>
+                <Route path="/adminHome" element={<adminHome></adminHome>}></Route>
             </Routes>
             <Fotter_components></Fotter_components>
         </div>

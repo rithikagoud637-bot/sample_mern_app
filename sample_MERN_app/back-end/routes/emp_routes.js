@@ -6,7 +6,7 @@ router.post("/register",async (req,res)=>{
     let data=req.body;
     data.password=await bcrypt.hash(data.password,10);
     let newuser=new users(data);
-    let result=await newuser.save();
+    let result=await newuser.save(); 
     res.send(result);
 })
 
